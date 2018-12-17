@@ -1,0 +1,62 @@
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\obj\Debug\QM.Buiness.csprojResolveAssemblyReference.cache
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\obj\Debug\Interop.SHDocVw.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\obj\Debug\QM.Buiness.csproj.ResolveComReference.cache
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\bin\Debug\QM.Buiness.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\bin\Debug\QM.Buiness.pdb
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\obj\Debug\QM.Buiness.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\obj\Debug\QM.Buiness.pdb
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\bin\Debug\QM.DB.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\bin\Debug\QM.DB.pdb
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\bin\Debug\Interop.SHDocVw.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\bin\Debug\Geckofx-Core.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_master\QM.Buiness\bin\Debug\Geckofx-Winforms.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\bin\Debug\QM.Buiness.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\bin\Debug\QM.Buiness.pdb
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\bin\Debug\Geckofx-Core.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\bin\Debug\Geckofx-Winforms.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\bin\Debug\QM.DB.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\bin\Debug\QM.DB.pdb
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\bin\Debug\Interop.SHDocVw.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.csprojResolveAssemblyReference.cache
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\obj\Debug\Interop.SHDocVw.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.csproj.ResolveComReference.cache
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.dll
+C:\mysteap\work_office\ProjectOut\GZ_baijiale\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.pdb
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\QM.Buiness.dll
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\QM.Buiness.pdb
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\Geckofx-Core.dll
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\Geckofx-Winforms.dll
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\QM.DB.dll
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\QM.DB.pdb
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\Interop.SHDocVw.dll
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.csprojResolveAssemblyReference.cache
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\Interop.SHDocVw.dll
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.csproj.ResolveComReference.cache
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.dll
+D:\Dev Project\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.pdb
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\QM.Buiness.dll
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\QM.Buiness.pdb
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\Geckofx-Core.dll
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\Geckofx-Winforms.dll
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\QM.DB.dll
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\QM.DB.pdb
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\bin\Debug\Interop.SHDocVw.dll
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.csprojResolveAssemblyReference.cache
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\Interop.SHDocVw.dll
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.csproj.ResolveComReference.cache
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.dll
+I:\Test\GZ_Caipiao\Queen_masterclass\QM.Buiness\obj\Debug\QM.Buiness.pdb
+D:\Devlop\火星云\HXY\QM.Buiness\bin\Debug\QM.Buiness.dll
+D:\Devlop\火星云\HXY\QM.Buiness\bin\Debug\QM.Buiness.pdb
+D:\Devlop\火星云\HXY\QM.Buiness\bin\Debug\QM.DB.dll
+D:\Devlop\火星云\HXY\QM.Buiness\bin\Debug\QM.DB.pdb
+D:\Devlop\火星云\HXY\QM.Buiness\bin\Debug\Interop.SHDocVw.dll
+D:\Devlop\火星云\HXY\QM.Buiness\obj\Debug\QM.Buiness.csprojResolveAssemblyReference.cache
+D:\Devlop\火星云\HXY\QM.Buiness\obj\Debug\Interop.SHDocVw.dll
+D:\Devlop\火星云\HXY\QM.Buiness\obj\Debug\QM.Buiness.csproj.ResolveComReference.cache
+D:\Devlop\火星云\HXY\QM.Buiness\obj\Debug\QM.Buiness.dll
+D:\Devlop\火星云\HXY\QM.Buiness\obj\Debug\QM.Buiness.pdb
+D:\Devlop\火星云\HXY\QM.Buiness\bin\Debug\log4net.dll
+D:\Devlop\火星云\HXY\QM.Buiness\bin\Debug\China_System.Common.dll
+D:\Devlop\火星云\HXY\QM.Buiness\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Devlop\火星云\HXY\QM.Buiness\bin\Debug\China_System.Common.pdb

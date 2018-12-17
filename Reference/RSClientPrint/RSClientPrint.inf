@@ -1,0 +1,52 @@
+[version]
+	signature="$CHICAGO$"
+	AdvancedINF=2.0
+[Add.Code]
+	RSClientPrint.dll=RSClientPrint.dll
+	gdiplus.dll=gdiplus.dll
+	RSClientPrint_1028.rll=RSClientPrint_1028.rll
+	RSClientPrint_1031.rll=RSClientPrint_1031.rll
+	RSClientPrint_1033.rll=RSClientPrint_1033.rll
+	RSClientPrint_1036.rll=RSClientPrint_1036.rll
+	RSClientPrint_1040.rll=RSClientPrint_1040.rll
+	RSClientPrint_1041.rll=RSClientPrint_1041.rll
+	RSClientPrint_1042.rll=RSClientPrint_1042.rll
+	RSClientPrint_1043.rll=RSClientPrint_1043.rll
+	RSClientPrint_1046.rll=RSClientPrint_1046.rll
+	RSClientPrint_1049.rll=RSClientPrint_1049.rll
+	RSClientPrint_1053.rll=RSClientPrint_1053.rll
+	RSClientPrint_2052.rll=RSClientPrint_2052.rll
+	RSClientPrint_3082.rll=RSClientPrint_3082.rll
+[RSClientPrint.dll]
+	file-win32-x86=thiscab
+	clsid={FA91DF8D-53AB-455D-AB20-F2F023E498D3}
+	FileVersion=2005,90,3200,00
+	RegisterServer=yes
+[gdiplus.dll]
+	file-win32-x86=thiscab
+[RSClientPrint_1028.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1031.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1033.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1036.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1040.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1041.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1042.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1043.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1046.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1049.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_1053.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_2052.rll]
+	file-win32-x86=thiscab
+[RSClientPrint_3082.rll]
+	file-win32-x86=thiscab

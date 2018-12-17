@@ -1,0 +1,4 @@
+D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\bin\Release\China_System.Common.dll
+D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\bin\Release\China_System.Common.pdb
+D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\obj\Release\China_System.Common.dll
+D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\obj\Release\China_System.Common.pdb

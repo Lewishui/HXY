@@ -1,0 +1,30 @@
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\China_System.Common.dll
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\China_System.Common.pdb
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\office.dll
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\office.xml
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\Microsoft.Office.Interop.Excel.xml
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\obj\Debug\China_System.Common.dll
+C:\mysteap\work_office\Pepsico\A_M Deeper commercial DBMS\AM_DeepercommercialDBMS\China_System.Common\obj\Debug\China_System.Common.pdb
+D:\Dev Project\mysteap\work_office\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\China_System.Common.dll
+D:\Dev Project\mysteap\work_office\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\China_System.Common.pdb
+D:\Dev Project\mysteap\work_office\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\office.dll
+D:\Dev Project\mysteap\work_office\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Dev Project\mysteap\work_office\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\Dev Project\mysteap\work_office\AM_DeepercommercialDBMS\China_System.Common\bin\Debug\office.xml
+D:\Dev Project\mysteap\work_office\AM_DeepercommercialDBMS\China_System.Common\obj\Debug\China_System.Common.csprojResolveAssemblyReference.cache
+D:\Dev Project\mysteap\work_office\AM_DeepercommercialDBMS\China_System.Common\obj\Debug\China_System.Common.dll
+D:\Dev Project\mysteap\work_office\AM_DeepercommercialDBMS\China_System.Common\obj\Debug\China_System.Common.pdb
+D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\bin\Debug\China_System.Common.dll
+D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\bin\Debug\China_System.Common.pdb
+D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\obj\Debug\China_System.Common.csprojResolveAssemblyReference.cache
+D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\obj\Debug\China_System.Common.dll
+D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\obj\Debug\China_System.Common.pdb
+D:\Devlop\火星云\HXY\China_System.Common\bin\Debug\China_System.Common.dll
+D:\Devlop\火星云\HXY\China_System.Common\bin\Debug\China_System.Common.pdb
+D:\Devlop\火星云\HXY\China_System.Common\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Devlop\火星云\HXY\China_System.Common\obj\Debug\China_System.Common.csprojResolveAssemblyReference.cache
+D:\Devlop\火星云\HXY\China_System.Common\obj\Debug\China_System.Common.dll
+D:\Devlop\火星云\HXY\China_System.Common\obj\Debug\China_System.Common.pdb
