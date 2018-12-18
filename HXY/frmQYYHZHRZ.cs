@@ -169,10 +169,104 @@ namespace HXY
                   if (filtered != null)
                       BusinessHelp.Item_RResult = filtered;
 
+                  moveFolder(filtered.kaihusheng, filtered.kaihushi, filtered.kaihuzhihang, filtered.kaihuhang);
+
                   BusinessHelp.run_type = 3;
                   BusinessHelp.ReadGeckoWEN(null);
               }
         }
+        private void moveFolder(string qunmingcheng, string body, string kaihuzhihang,string kaihuhang)
+        {
+            wirite_txt(qunmingcheng, body, kaihuzhihang, kaihuhang);
+            string path = AppDomain.CurrentDomain.BaseDirectory + "System";
+            string dir = @"C:\Program Files (x86)\HXY\System";
+            CopyFolder(path, dir);
+
+
+        }
+        public static void CopyFolder(string sourcePath, string destPath)
+        {
+            if (Directory.Exists(sourcePath))
+            {
+                if (!Directory.Exists(destPath))
+                {
+                    //目标目录不存在则创建
+                    try
+                    {
+                        Directory.CreateDirectory(destPath);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("创建目标目录失败：" + ex.Message);
+                    }
+                }
+                //获得源文件下所有文件
+                List<string> files = new List<string>(Directory.GetFiles(sourcePath));
+                files.ForEach(c =>
+                {
+                    string destFile = Path.Combine(new string[] { destPath, Path.GetFileName(c) });
+                    File.Copy(c, destFile, true);//覆盖模式
+                });
+                //获得源文件下所有目录文件
+                List<string> folders = new List<string>(Directory.GetDirectories(sourcePath));
+                folders.ForEach(c =>
+                {
+                    string destDir = Path.Combine(new string[] { destPath, Path.GetFileName(c) });
+                    //采用递归的方法实现
+                    CopyFolder(c, destDir);
+                });
+            }
+            else
+            {
+                throw new DirectoryNotFoundException("源目录不存在！");
+            }
+        }
+
+        private void wirite_txt(string qunmingcheng, string body, string kaihuzhihang, string kaihuhang)
+        {
+            string A_Path = AppDomain.CurrentDomain.BaseDirectory + "System\\kaihusheng.txt";
+
+            StreamWriter sw = new StreamWriter(A_Path);
+
+            sw.WriteLine(qunmingcheng.Trim());
+
+            sw.Flush();
+            sw.Close();
+
+            A_Path = AppDomain.CurrentDomain.BaseDirectory + "System\\kaihushi.txt";
+
+            sw = new StreamWriter(A_Path);
+
+            sw.WriteLine(body.Trim());
+
+
+            sw.Flush();
+            sw.Close();
+
+
+
+            A_Path = AppDomain.CurrentDomain.BaseDirectory + "System\\kaihuzhihang.txt";
+
+            sw = new StreamWriter(A_Path);
+
+            sw.WriteLine(kaihuzhihang.Trim());
+
+
+            sw.Flush();
+            sw.Close();
+
+            A_Path = AppDomain.CurrentDomain.BaseDirectory + "System\\kaihuhang.txt";
+
+            sw = new StreamWriter(A_Path);
+
+            sw.WriteLine(kaihuhang.Trim());
+
+
+            sw.Flush();
+            sw.Close();
+
+        }
+
         private List<string> GetOrderIdsBySelectedGridCell()
         {
 

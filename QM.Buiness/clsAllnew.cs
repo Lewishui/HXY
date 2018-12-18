@@ -15,6 +15,7 @@ using System.Text.RegularExpressions;
 using mshtml;
 using System.ComponentModel;
 using China_System.Common;
+using System.Diagnostics;
 
 namespace QM.Buiness
 {
@@ -26,6 +27,7 @@ namespace QM.Buiness
         第一页面,
         第二页面,
         Filter下拉,
+
         结束页面
 
     }
@@ -46,6 +48,7 @@ namespace QM.Buiness
         private ProcessStatus isrun = ProcessStatus.初始化;
         private EapprovalProcessStatus isrun1 = EapprovalProcessStatus.初始化;
         private bool isOneFinished = false;
+        private bool isOneFinished_VI = false;
         private Form viewForm;
         public ToolStripProgressBar pbStatus { get; set; }
         public ToolStripStatusLabel tsStatusLabel1 { get; set; }
@@ -65,6 +68,7 @@ namespace QM.Buiness
         public List<clsDatabaseinfo> RResult;
         public clsDatabaseinfo Item_RResult;
         int yinhangrun_index = 0;
+        private DateTime StopTime;
         #region Import API
         System.Timers.Timer aTimer = new System.Timers.Timer(100);//实例化Timer类，设置间隔时间为10000毫秒； 
         System.Timers.Timer t = new System.Timers.Timer(1000);//实例化Timer类，设置间隔时间为10000毫秒； 
@@ -324,6 +328,7 @@ namespace QM.Buiness
                 }
                 if (run_type == 3)
                 {
+                    isrun1 = EapprovalProcessStatus.初始化;
                     InitAllCityData();
                     while (!isOneFinished)
                     {
@@ -331,7 +336,7 @@ namespace QM.Buiness
 
                         if (run_type == 3)
                         {
-                            if (isrun == ProcessStatus.确认YES)
+                            if (isrun == ProcessStatus.确认YES || isrun == ProcessStatus.第一页面)
                                 erici_fuzhi();
 
 
@@ -339,11 +344,27 @@ namespace QM.Buiness
                         System.Windows.Forms.Application.DoEvents();
                     }
                 }
+                if (MyWebBrower != null)
+                {
+                    if (MyWebBrower.IsBusy)
+                    {
+                        MyWebBrower.Stop();
+                    }
+                    MyWebBrower.Dispose();
+                    MyWebBrower = null;
+                }
+                if (viewForm != null)
+                {
+
+                    MyWebBrower = null;
+                    viewForm.Close();
+
+                }
                 return null;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("" + ex);
+                //  MessageBox.Show("" + ex);
                 return null;
                 throw;
             }
@@ -366,7 +387,14 @@ namespace QM.Buiness
             viewForm.Controls.Clear();
             viewForm.Controls.Add(Browser);
             viewForm.FormClosing += new FormClosingEventHandler(viewForm_FormClosing);
-            viewForm.Show();
+            if (run_type == 3)//查询
+            {
+                viewForm.Show();
+                viewForm.MaximizeBox = true;
+                viewForm.WindowState = FormWindowState.Maximized;
+            }
+            viewForm.Text = "MSTI";
+
             if (run_type == 2 || run_type == 3)
                 testUrl = "https://om.qq.com/userAuth/index";//请完成企业银行账户验证
             else if (run_type == 1)
@@ -665,6 +693,8 @@ namespace QM.Buiness
                 GeckoHtmlElement shiqu = null;
                 GeckoHtmlElement zhihang = null;
                 GeckoElementCollection span = GmyDoc.Document.GetElementsByTagName("span");
+                GeckoElementCollection li = GmyDoc.Document.GetElementsByTagName("li");
+                GeckoElementCollection div = GmyDoc.Document.GetElementsByTagName("div");
                 foreach (GeckoHtmlElement item in span)
                 {
                     //选择账号
@@ -677,10 +707,34 @@ namespace QM.Buiness
                     if (item.InnerHtml == "请选择支行")
                         zhihang = item;
                 }
+                kaihuyinhang = null;
+                foreach (GeckoHtmlElement item in div)
+                {
+                    if (item.GetAttribute("class") == "chosen-container chosen-container-single")
+                        kaihuyinhang = item;
+                }
+
+                if (kaihuyinhang != null && isrun1 == EapprovalProcessStatus.初始化)
+                {
+                    //kaihuyinhang.InnerHtml = Item_RResult.kaihuhang;
+                    kaihuyinhang.Click();
+                    kaihuyinhang.Click();
+                    isrun1 = EapprovalProcessStatus.Current_Task;
+
+                }
+                kaihuyinhang = null;
+
+                foreach (GeckoHtmlElement item in li)
+                {
+                    //选择账号
+                    if (item.InnerHtml == "中国银行")
+                        kaihuyinhang = item;
+                }
                 if (kaihuyinhang != null)
                 {
-                    kaihuyinhang.InnerHtml = Item_RResult.kaihuhang;
+                    kaihuyinhang.SetAttribute("class", "active-result result-selected");
                 }
+
                 if (kaihuyinhang != null)
                 {
                     shengfen.InnerHtml = Item_RResult.kaihusheng;// "黑龙江省";
@@ -703,26 +757,36 @@ namespace QM.Buiness
                     if (item.GetAttribute("type") == "button" && item.InnerHtml == "提交")
                         submit = item;
                 }
-                if (submit != null && kaihuyinhang != null)
+                if (submit != null && yinhangzhanghao != null)
                 {
-                   // submit.Click();
+                    //  submit.Click();
+                    vi();
+
                     isrun = ProcessStatus.第一页面;
                 }
 
             }
             if (GmyDoc.Url.ToString().IndexOf("https://om.qq.com/user/comBlackProIntercept") >= 0 && isrun == ProcessStatus.第一页面)
             {
+
                 GeckoHtmlElement namevalue = null;
+                GeckoHtmlElement vi_meipaotong = null;
 
                 GeckoElementCollection userNames = GmyDoc.Document.GetElementsByTagName("p");
                 foreach (GeckoHtmlElement item in userNames)
                 {
                     if (item.GetAttribute("class") == "info")
                         namevalue = item;
+                    if (item.GetAttribute("class") == "help-block error" && item.InnerHtml == "请选择银行")
+                        vi_meipaotong = item;
+                }
+                if (vi_meipaotong != null && isOneFinished_VI == true)
+                {
+                    //   vi();
                 }
                 if (namevalue != null)
                 {
-                    string jiegou = namevalue.GetAttribute("value");
+                    string jiegou = namevalue.InnerHtml;
                     Item_RResult.tijiao_jieguo = jiegou;
                     #region 退出账号
 
@@ -731,6 +795,54 @@ namespace QM.Buiness
                     isrun = ProcessStatus.第一页面;
                     isOneFinished = true;
                 }
+            }
+
+        }
+
+        private bool vi()
+        {
+            //遍历所有查找到的进程
+            isOneFinished_VI = false;
+            StopTime = DateTime.Now;
+            bool istrue = false;
+            while (!isOneFinished_VI)
+            {
+                Process[] pro = Process.GetProcesses();//获取已开启的所有进程
+
+                bool iscontains = false;
+                for (int ii = 0; ii < pro.Length; ii++)
+                {
+                    if (pro[ii].ProcessName.ToString().Contains("ST"))
+                    {
+                        iscontains = true;
+
+                        DateTime rq2 = DateTime.Now;  //结束时间
+                        TimeSpan ts = rq2 - StopTime;
+                        int timeTotal = ts.Minutes;
+                        if (timeTotal >= 2)
+                        {
+                            //bgWorker1.ReportProgress(0, "系统错误，正在执行推出，请稍后自行检查数据源错误或运行环境问题！");
+                            pro[ii].Kill();//结束进程
+                            isOneFinished_VI = true;
+                            //Application.Exit();
+                        }
+                    }
+                }
+                if (iscontains == false)
+                    isOneFinished_VI = true;
+            }
+            Thread.Sleep(1000);
+            //  if (i == 0)
+            user_winauto("");
+            return isOneFinished_VI;
+
+        }
+        private static void user_winauto(string fajianren)
+        {
+
+            {
+                string ZFCEPath = Path.Combine(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ""), "");
+                System.Diagnostics.Process.Start("ST.exe", ZFCEPath);
             }
 
         }

@@ -20,3 +20,6 @@ D:\Devlop\火星云\HXY\HXY\bin\Debug\Microsoft.Office.Interop.Excel.dll
 D:\Devlop\火星云\HXY\HXY\bin\Debug\China_System.Common.pdb
 D:\Devlop\火星云\HXY\HXY\obj\Debug\HXY.frmMessageShow.resources
 D:\Devlop\火星云\HXY\HXY\obj\Debug\HXY.frmQYYHZHRZ.resources
+D:\Devlop\火星云\HXY\HXY\bin\Debug\office.dll
+D:\Devlop\火星云\HXY\HXY\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Devlop\火星云\HXY\HXY\bin\Debug\office.xml

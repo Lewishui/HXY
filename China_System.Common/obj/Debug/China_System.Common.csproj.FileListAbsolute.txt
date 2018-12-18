@@ -25,6 +25,5 @@ D:\Devlop\gongshang_zhengjian\Gongshang_PIC\China_System.Common\obj\Debug\China_
 D:\Devlop\火星云\HXY\China_System.Common\bin\Debug\China_System.Common.dll
 D:\Devlop\火星云\HXY\China_System.Common\bin\Debug\China_System.Common.pdb
 D:\Devlop\火星云\HXY\China_System.Common\bin\Debug\Microsoft.Office.Interop.Excel.dll
-D:\Devlop\火星云\HXY\China_System.Common\obj\Debug\China_System.Common.csprojResolveAssemblyReference.cache
 D:\Devlop\火星云\HXY\China_System.Common\obj\Debug\China_System.Common.dll
 D:\Devlop\火星云\HXY\China_System.Common\obj\Debug\China_System.Common.pdb

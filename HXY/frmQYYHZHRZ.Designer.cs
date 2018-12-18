@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQYYHZHRZ));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -43,6 +44,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tijiaoanjian = new System.Windows.Forms.DataGridViewButtonColumn();
             this.zhanghao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mima = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -139,6 +142,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label2);
@@ -155,7 +160,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(471, 21);
+            this.button4.Location = new System.Drawing.Point(514, 19);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 36);
             this.button4.TabIndex = 6;
@@ -165,11 +170,11 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(776, 21);
+            this.button3.Location = new System.Drawing.Point(776, 19);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 36);
             this.button3.TabIndex = 5;
-            this.button3.Text = "下载";
+            this.button3.Text = "下载Excel";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -183,7 +188,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(364, 20);
+            this.button2.Location = new System.Drawing.Point(392, 19);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 36);
             this.button2.TabIndex = 3;
@@ -209,9 +214,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(270, 21);
+            this.button1.Location = new System.Drawing.Point(270, 19);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.Size = new System.Drawing.Size(75, 36);
             this.button1.TabIndex = 0;
             this.button1.Text = "选择文件";
             this.button1.UseVisualStyleBackColor = true;
@@ -227,11 +232,32 @@
             this.tabPage2.Text = "Page2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MS PGothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(351, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 19);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "->";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MS PGothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(473, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 19);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "->";
+            // 
             // tijiaoanjian
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = "提交";
-            this.tijiaoanjian.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.NullValue = "提交";
+            this.tijiaoanjian.DefaultCellStyle = dataGridViewCellStyle2;
             this.tijiaoanjian.HeaderText = "";
             this.tijiaoanjian.Name = "tijiaoanjian";
             this.tijiaoanjian.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -323,8 +349,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 458);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmQYYHZHRZ";
-            this.Text = "frmQYYHZHRZ";
+            this.Text = "腾讯内容开放";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -353,6 +380,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripLabel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewButtonColumn tijiaoanjian;
         private System.Windows.Forms.DataGridViewTextBoxColumn zhanghao;
         private System.Windows.Forms.DataGridViewTextBoxColumn mima;
