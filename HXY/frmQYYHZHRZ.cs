@@ -32,7 +32,7 @@ namespace HXY
         public frmQYYHZHRZ()
         {
             InitializeComponent();
-            this.Text = String.Format("腾讯内容开放 {0}", AssemblyTitle)+"  " + String.Format("Version {0}", AssemblyVersion); ;
+            //  this.Text = String.Format("腾讯内容开放 {0}", AssemblyTitle)+"  " + String.Format("Version {0}", AssemblyVersion); ;
         }
         private void InitialBackGroundWorker()
         {
@@ -91,7 +91,7 @@ namespace HXY
                                                     clsShowMessage.MSG_007,
                                                     clsConstant.Dialog_Status_Disable);
                 frmMessageShow.ShowDialog();
-          
+
                 // 数据读取成功后在画面显示
                 if (blnBackGroundWorkIsOK)
                 {
@@ -160,24 +160,31 @@ namespace HXY
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-              DataGridViewColumn column = dataGridView1.Columns[e.ColumnIndex];
+            DataGridViewColumn column = dataGridView1.Columns[e.ColumnIndex];
 
-              if (column == tijiaoanjian)
-              {
-                  var oids = GetOrderIdsBySelectedGridCell();
-                  clsAllnew BusinessHelp = new clsAllnew();
+            if (column == tijiaoanjian)
+            {
+                var oids = GetOrderIdsBySelectedGridCell();
+                clsAllnew BusinessHelp = new clsAllnew();
 
-                  var filtered = RResult.Find(s => s.zhanghao == oids[0]);
-                  if (filtered != null)
-                      BusinessHelp.Item_RResult = filtered;
-
-                  moveFolder(filtered.kaihusheng, filtered.kaihushi, filtered.kaihuzhihang, filtered.kaihuhang);
-
-                  BusinessHelp.run_type = 3;
-                  BusinessHelp.ReadGeckoWEN(null);
-              }
+                var filtered = RResult.Find(s => s.zhanghao == oids[0]);
+                tijiao(BusinessHelp, filtered);
+            }
         }
-        private void moveFolder(string qunmingcheng, string body, string kaihuzhihang,string kaihuhang)
+
+        private void tijiao(clsAllnew BusinessHelp, clsDatabaseinfo filtered)
+        {
+            if (filtered != null)
+            {
+                BusinessHelp.Item_RResult = filtered;
+
+                moveFolder(filtered.kaihusheng, filtered.kaihushi, filtered.kaihuzhihang, filtered.kaihuhang);
+
+                BusinessHelp.run_type = 3;
+                BusinessHelp.ReadGeckoWEN(null);
+            }
+        }
+        private void moveFolder(string qunmingcheng, string body, string kaihuzhihang, string kaihuhang)
         {
             wirite_txt(qunmingcheng, body, kaihuzhihang, kaihuhang);
             string path = AppDomain.CurrentDomain.BaseDirectory + "System";
@@ -440,6 +447,22 @@ namespace HXY
                     return "";
                 }
                 return ((AssemblyCompanyAttribute)attributes[0]).Company;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (RResult != null && RResult.Count > 0)
+            {
+                clsAllnew BusinessHelp = new clsAllnew();
+                int yinhangrun_index = 1;
+                foreach (clsDatabaseinfo filtered in RResult)
+                {
+                    toolStripLabel1.Text = "正在提交   :  " + filtered.zhanghao + "  " + yinhangrun_index.ToString() + "/" + RResult.Count.ToString();
+
+                    tijiao(BusinessHelp, filtered);
+                }
+                toolStripLabel1.Text = "提交完成 ";
             }
         }
     }
