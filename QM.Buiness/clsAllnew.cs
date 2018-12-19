@@ -760,7 +760,7 @@ namespace QM.Buiness
                 if (submit != null && yinhangzhanghao != null)
                 {
                     //  submit.Click();
-                    vi();
+                 vi();
 
                     isrun = ProcessStatus.第一页面;
                 }
