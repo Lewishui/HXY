@@ -32,7 +32,7 @@ namespace HXY
         public frmQYYHZHRZ()
         {
             InitializeComponent();
-            //  this.Text = String.Format("腾讯内容开放 {0}", AssemblyTitle)+"  " + String.Format("Version {0}", AssemblyVersion); ;
+            toolStripLabel2.Text = String.Format("腾讯内容开放 {0}", AssemblyTitle) + "  " + String.Format("Version {0}", AssemblyVersion); ;
         }
         private void InitialBackGroundWorker()
         {

@@ -328,6 +328,8 @@ namespace QM.Buiness
                 }
                 if (run_type == 3)
                 {
+                    isOneFinished = false;
+
                     isrun1 = EapprovalProcessStatus.初始化;
                     InitAllCityData();
                     while (!isOneFinished)
